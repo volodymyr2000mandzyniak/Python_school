@@ -1,45 +1,6 @@
 from models import Plant, Employee
 import re
 
-# while True:
-#     print("1. Add Plant\n2. Gel all plants\n------------------")
-#     print("3. Add Employee\n4. Get all employees\n-----------------")
-#     print("5. Update Plant\n------------------")
-#     flag = int(input("Choose menu item: "))
-#     if flag == 1:
-#         name = input("Plant name: ")
-#         address = input("Plant address: ")
-#         plant = Plant(name, address)
-#         plant.save()
-
-#     elif flag == 2:
-#         Plant.get_all_plants_for_print()
-
-#     elif flag == 3:
-#         name = input("Employee name: ")
-#         email = input("Employee email: ")
-#         plant_id = int(input("Plant id: "))
-        
-#         if not re.match(r"[^@]+@[^@]+\.[^@]+", email):
-#             print('your email is incorect.Example exemp@exmp.com')   
-#             continue
-#         else:
-#             employee = Employee(name, email, plant_id)
-#             employee.save()
-#             print("======Created=======")
- 
-#     elif flag == 4:
-#         Employee.get_all_employees()
-
-#     elif flag == 5:
-#         plant_id = int(input("Plant_id: "))  
-#         name = input("Plant new name: ")
-#         address = input("Plant new address: ")
-#         new_data = {'name': name, 'address': address}
-#         Plant.update(plant_id, new_data) 
-#         print("====Updated====")
-
-
 while True:
     print("1. Add Plant\n2. Gel all plants\n3. Update Plant")
     print("---------------------")
@@ -67,7 +28,7 @@ while True:
         Plant.update(plant_id, new_data) 
         print("====Updated====")
     
-    #====================================================================
+#====================================================================
         
     # Created Employee
     elif flag == 4:

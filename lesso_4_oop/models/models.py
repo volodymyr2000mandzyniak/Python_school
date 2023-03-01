@@ -40,7 +40,6 @@ class Plant:
         file.close()
         return plants
 
-
    
     @classmethod
     def get_all_plants_for_print(cls):
@@ -62,19 +61,7 @@ class Plant:
                
         file = open(cls.file, "w")
         file.write(json.dumps(plants))
-        file.close()       
-
-
-
-
-
-
-
-
-
-
-
-
+        file.close()      
 
 # =======================================================================================
 
