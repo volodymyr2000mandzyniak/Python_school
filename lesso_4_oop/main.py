@@ -25,6 +25,7 @@ while True:
         name = input("Plant new name: ")
         address = input("Plant new address: ")
         new_data = {'name': name, 'address': address}
+        
         Plant.update(plant_id, new_data) 
         print("====Updated====")
     
@@ -56,6 +57,7 @@ while True:
         email = input("Employee email: ")
         plant_id = int(input("Plant id: "))
         new_data = {'name': name, 'email': email, 'plant_id': plant_id}
+        
         Employee.update(employee_id, new_data)
         print("====Updated====")
 
